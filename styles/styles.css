@@ -47,6 +47,7 @@ main{
   height: 400px;
   width: 725px;
   margin-top: 10px;
+  justify-content: center
 }
 
 img {
@@ -91,6 +92,13 @@ h5 {
 
 input {
   margin-bottom: 10px;
+}
+#ver_equipo{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

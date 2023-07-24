@@ -37,9 +37,9 @@ let equipoElegido = document.getElementById("ver_equipo")
 mostrarEquipo.addEventListener("click", verEquipo)
 tarjetas(jugadores)
 
-function verEquipo(array){
-    juego.innerHTML = ""
-    array.forEach(element => {
+function verEquipo(){
+    equipoElegido.innerHTML = ""
+    equipo.forEach(element => {
         let contenedor = document.createElement("div")
         contenedor.className = "tarjetas_estilos"
         contenedor.innerHTML = `
@@ -51,11 +51,17 @@ function verEquipo(array){
         <button id=${element.id}>Eliminar jugador</button>
         `
         equipoElegido.append(contenedor) 
+        let eliminar = document.getElementById(element.id)
+        eliminar.addEventListener("click", eliminarEquipo)
     
 })
     tarjetas(equipo)
 }
 
+function eliminarEquipo(e) {
+    let enEquipo = equipo.find(element => element.id === e.target.id)
+    equipo.splice(enEquipo)
+}
 
 function tarjetas(array) {
     
