@@ -1,0 +1,68 @@
+
+{
+"jugadores": [
+    {
+        "nombre": "Messi",
+        "liga": "ligue 1",
+        "club": "psg",
+        "nacionalidad": "argentina",
+        "foto": "messi.png",
+        "id": "messi",
+        "precio": 80000
+    },
+    {
+        "nombre": "Mbappe",
+        "club": "psg",
+        "liga": "ligue 1",
+        "nacionalidad": "francia",
+        "foto": "mbappe.png",
+        "id": "mbappe",
+        "precio": 70000
+    },
+    {
+        "nombre": "Ronaldo",
+        "club": "manchester united",
+        "liga": "premier league",
+        "nacionalidad": "portugal",
+        "foto": "ronaldo.png",
+        "id": "ronaldo",
+        "precio": 60000
+    },
+    {
+        "nombre":"De Bruyne",
+    "club":"manchester city",
+    "liga":"premier league",
+    "nacionalidad":"belgica",
+    "foto": "debruyne.png",
+    "id": "debruyne",
+    "precio": 65000
+    },
+    {
+        "nombre":"Modric",
+        "club":"real madrid",
+        "liga":" bbva",
+        "nacionalidad":"croacia",
+        "foto": "modric.png",
+        "id": "modric",
+        "precio": 65000
+    },
+    {
+        "nombre":"De Jong",
+        "club":"barcelona",
+        "liga":" bbva",
+        "nacionalidad":"paises bajos",
+        "foto": "dejong.png",
+        "id": "dejong",
+        "precio": 50000
+    },
+    {
+        "nombre":"Ruben Dias",
+        "club":"manchester city",
+        "liga":"premier league",
+        "nacionalidad":"portugal",
+        "foto": "rubendias.png",
+        "id": "rubendias",
+        "precio": 40000
+    }
+]
+}

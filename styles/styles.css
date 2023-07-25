@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto+Condensed:wght@300&display=swap');
 * {
   padding: 0;
   box-shadow: 0;
+  font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -11,6 +13,7 @@ body {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -28,10 +31,14 @@ main{
 .ocultar {
   display: none;
 }
-
-.btn_play {
-  width: 80px;
-  height: 60px;
+#juego.ocultar{
+  display: none
+}
+#mostrar_equipo{
+  border-radius: 20px;
+  background-color: rgb(0, 255, 55);
+  color: white;
+  border-color: white;
 }
 
 .inicio {
@@ -42,17 +49,31 @@ main{
 }
 
 .cancha {
-  display: flex;
+  display: none;
   background-image: url(../media/cancha.jpg);
   height: 400px;
   width: 725px;
   margin-top: 10px;
-  justify-content: center
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
-
+button{
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: 1px;
+  color: white;
+  background-color: rgb(44, 90, 243);
+}
+button:hover{
+  background-color: red;
+  color: white;
+}
 img {
   height: 60%;
   width: 80%;
+  border-radius: 10px;
 }
 
 #juego {
@@ -69,23 +90,32 @@ img {
 }
 
 .tarjetas_estilos {
-  height: 300px;
   width: 200px;
+  height: 300px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 5px solid black;
+  border: 1px solid black;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(85, 85, 255) 34%, rgb(0, 212, 255) 100%);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(24, 24, 24) 34%, rgb(109, 109, 109) 100%);
+}
+.tarjetas_estilos:hover{
+  transform: scale(1.1);
 }
 
 h4 {
+  letter-spacing: 1px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: underline;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 
 h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -101,4 +131,27 @@ input {
   align-items: center;
 }
 
+#contador{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: underline;
+  border-radius: 5px;
+  color: gold;
+  background-color: green;
+}
+
+#contador.fondo-rojo{
+  background-color: red;
+}
+
+
+#confirmarEquipo{
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+#confirmarEquipo.ocultar{
+  display: none;
+}
 /*# sourceMappingURL=styles.css.map */

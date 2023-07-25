@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <title>Document</title>
 </head>
 
@@ -24,14 +26,17 @@
             <h2 class="inicio_como_jugar">Como Jugar</h2>
             <p class="inicio_explicacion">Elegí cinco jugadores y arma tu propio equipo de F5 <br>
                 Reglas para tu equipo: <br>
-                - </p>
+                - Debes elegir 5(cinco) jugadores <br>
+                - Tu equipo no puede superar el valor de 300.000$ <br>  </p>
                 <input id="buscar" type="text" placeholder="Buscar jugador">
                 <button id="mostrar_equipo">Ver tu equipo</button>
         </div>
+        <div id="contador"></div>
         <div id="juego">
             
         </div>
         <div id="cancha" class="cancha">
+            <button id="confirmarEquipo">Confirmar Equipo</button>
             <div id="ver_equipo"></div>
         </div>
     </main>
@@ -39,8 +44,8 @@
 
     </footer>
 
-
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./script/script.js"></script>
 </body>
 
