@@ -27,6 +27,7 @@ fetch(datos)
     tarjetas(jugadores);
   });
 tarjetas(jugadores)
+contadorActualizado()
 
 
 
@@ -227,7 +228,7 @@ function contadorActualizado() {
 function confirmarEquipo() {
 let totalAcumulado = contador()
 let total = 300000
-    if (equipo.length < 4 ) {
+    if (equipo.length < 5 ) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -255,4 +256,6 @@ let total = 300000
     }
     
     } 
+
+
 

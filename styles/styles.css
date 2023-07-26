@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto+Condensed:wght@300&display=swap');
+
 * {
   padding: 0;
   box-shadow: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-  background-color: rgb(97, 189, 231);
+  background-color: rgb(85, 85, 85);
   color: white;
 }
 
@@ -18,23 +19,28 @@ header {
 
 ul {
   list-style: none;
-  font-size: 2rem;
-  background-color: rgb(97, 189, 231);
+  font-size: 4rem;
 }
-main{
+
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.titulo{
+  text-shadow: 0 0 5px #FFF, 0 0 20px #49ff18, 2px 2px 3px rgba(206,89,55,0);
+}
 
 .ocultar {
   display: none;
 }
-#juego.ocultar{
+
+#juego.ocultar {
   display: none
 }
-#mostrar_equipo{
+
+#mostrar_equipo {
   border-radius: 20px;
   background-color: rgb(0, 255, 55);
   color: white;
@@ -46,6 +52,8 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #FFFFFF;
+text-shadow: 3px 5px 2px #474747;
 }
 
 .cancha {
@@ -59,17 +67,29 @@ main{
   flex-direction: column;
   position: relative;
 }
-button{
-  margin-bottom: 5px;
-  border-radius: 10px;
-  border: 1px;
-  color: white;
-  background-color: rgb(44, 90, 243);
+
+button {
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+  background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color:#7892c2;
+  border-radius:10px;
+  border:1px solid #4e6096;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #283966;
 }
-button:hover{
-  background-color: red;
-  color: white;
+
+button:hover {
+background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+background-color:#476e9e;
 }
+button:active{
+position:relative;
+top:1px;
+}
+
 img {
   height: 60%;
   width: 80%;
@@ -77,31 +97,45 @@ img {
 }
 
 #juego {
+  width: 1000px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  columns: 2;
   align-items: start;
   gap: 10px;
   border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  box-shadow: 1px 10px 108px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 1px 10px 108px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 1px 10px 108px 0px rgba(255, 255, 255, 0.75);
 }
-#mostrar_equipo{
+
+#mostrar_equipo {
   width: 100px;
   margin-bottom: 10px;
 }
 
 .tarjetas_estilos {
-  width: 200px;
+  flex: 0 0 200px;
   height: 300px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+  border-top: 3px solid #ffffff;
+  border-right: 3px double #ffffff;
+  border-bottom: 3px double #ffffff;
+  border-left: 3px double #ffffff;
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(24, 24, 24) 34%, rgb(109, 109, 109) 100%);
 }
-.tarjetas_estilos:hover{
+
+.tarjetas_estilos:hover {
   transform: scale(1.1);
 }
 
@@ -123,7 +157,8 @@ h5 {
 input {
   margin-bottom: 10px;
 }
-#ver_equipo{
+
+#ver_equipo {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -131,7 +166,7 @@ input {
   align-items: center;
 }
 
-#contador{
+#contador {
   font-size: 2rem;
   margin-bottom: 20px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -141,17 +176,24 @@ input {
   background-color: green;
 }
 
-#contador.fondo-rojo{
+#contador.fondo-rojo {
   background-color: red;
 }
 
 
-#confirmarEquipo{
+#confirmarEquipo {
   height: 30px;
   margin-bottom: 10px;
 }
 
-#confirmarEquipo.ocultar{
+#confirmarEquipo.ocultar {
   display: none;
 }
+
+.footer {
+  height: 100px;
+  background-color: black;
+  margin-top: 20px;
+}
+
 /*# sourceMappingURL=styles.css.map */

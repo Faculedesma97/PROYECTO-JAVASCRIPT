@@ -17,7 +17,7 @@
         "nacionalidad": "francia",
         "foto": "mbappe.png",
         "id": "mbappe",
-        "precio": 70000
+        "precio": 75000
     },
     {
         "nombre": "Ronaldo",
@@ -63,6 +63,24 @@
         "foto": "rubendias.png",
         "id": "rubendias",
         "precio": 40000
+    },
+    {
+        "nombre":"Vinicius jr",
+        "club":"real madrid",
+        "liga":"bbva",
+        "nacionalidad":"brasil",
+        "foto": "vini.png",
+        "id": "vinicius",
+        "precio": 70000
+    },
+    {
+        "nombre":"Di Maria",
+        "club":"juventus",
+        "liga":"ligue 1",
+        "nacionalidad":"argentina",
+        "foto": "dimaria.png",
+        "id": "dimaria",
+        "precio": 50000
     }
 ]
 }
